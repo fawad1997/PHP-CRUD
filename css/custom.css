@@ -1,0 +1,41 @@
+.container{
+	font-size:14px;
+}
+.img{
+	height:180px;
+}
+li{
+	 text-align: center; 
+}
+#the-slider{
+position:relative;
+margin-left:auto;
+margin-right:auto;
+	width:550px;}
+#the-slider img{
+
+	height:550px;
+}
+.carousel-inner{
+	align:center;
+}
+.ab .bc li:hover{
+	background-color:#CCC;
+}
+.btn-primary{
+ background-color:#0C3;
+}
+.btn-info{
+ background-color:#09C;
+}
+.btn-info:hover{
+	background-color:#2e6da4;
+	}
+	
+.jumbotron .jumb{
+	height:180px;
+	float:right;
+}
+footer{
+	margin-top:20px;
+}
