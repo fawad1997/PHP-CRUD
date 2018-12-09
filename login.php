@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
+<style>
+	body{
+            background-image:url("bg/bg3.jpg");
+           
+            background-size: 100% 200%;
+            padding: 0px;
+            background-repeat: no-repeat;
+	}
+</style>
 <?php $pageTitle = "Login Page"; ?>
 <?php require("config/configurations.php"); ?>
 <?php include("head.php"); ?>
 <body>
 <?php include("nav.php"); ?>
 <div class="container">
-	<h1>Login Form</h1>
+	
 	<?php $con = openCon(); ?>
 	<?php if(isset($_REQUEST['subBtn'])):
 		$email = $_REQUEST['em'];
@@ -25,6 +34,9 @@
 	endif;
 	?>
 	<div class="col-sm-6">
+		<div class="panel panel-primary">
+		<div class="panel-heading">Login</div>
+		<div class="panel-body">
 		<form method="post" action="">
 		  <div class="form-group">
 		    <label>Email address</label>
@@ -34,9 +46,11 @@
 		    <label for="exampleInputPassword1">Password</label>
 		    <input type="password" name="ps" class="form-control" placeholder="Password">
 		  </div>
-		  <button type="submit" name="subBtn" class="btn btn-primary">Login</button>
+		  <button type="submit" name="subBtn" class="btn btn-primary pull-right">Login</button>
 		</form>
 	</div>
+</div>
+</div>
 </div>
 <?php include("scripts.php"); ?>
 </body>
